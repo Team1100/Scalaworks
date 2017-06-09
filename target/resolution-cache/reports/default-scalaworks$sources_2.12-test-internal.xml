@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="ivy-report.xsl"?>
+<ivy-report version="1.0">
+	<info
+		organisation="default"
+		module="scalaworks$sources_2.12"
+		revision="1.0"
+		conf="test-internal"
+		confs="compile, runtime, test, provided, optional, compile-internal, runtime-internal, test-internal, plugin, sources, docs, pom, scala-tool"
+		date="20170608211950"/>
+	<dependencies>
+		<module organisation="org.scala-lang" name="scala-library">
+			<revision name="2.12.1" status="release" pubdate="20161205060923" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.scala-lang.org/" extra-info.apiURL="http://www.scala-lang.org/api/2.12.1/" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="2">
+				<license name="BSD 3-Clause" url="http://www.scala-lang.org/license.html"/>
+				<metadata-artifact status="no" details="" size="2685" time="0" location="C:\Users\zacha\.ivy2\cache\org.scala-lang\scala-library\ivy-2.12.1.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/scala-lang/scala-library/2.12.1/scala-library-2.12.1.pom"/>
+				<caller organisation="default" name="scalaworks$sources_2.12" conf="test, compile, provided, test-internal, runtime, optional" rev="2.12.1" rev-constraint-default="2.12.1" rev-constraint-dynamic="2.12.1" callerrev="1.0" extra-info.apiURL="http://www.scala-lang.org/api/2.12.1/"/>
+				<artifacts>
+					<artifact name="scala-library" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="988614" time="0" location="C:\Users\zacha\.ivy2\cache\org.scala-lang\scala-library\srcs\scala-library-2.12.1-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/scala-lang/scala-library/2.12.1/scala-library-2.12.1-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="edu.wpi.first" name="networktables">
+			<revision name="2017.3.1" status="release" pubdate="20170608160718" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="1">
+				<metadata-artifact status="no" details="" size="2356" time="0" location="C:\Users\zacha\.ivy2\cache\edu.wpi.first\networktables\ivy-2017.3.1.xml" searched="false" origin-is-local="false" origin-location="http://team846.github.io/wpilib-maven/edu/wpi/first/networktables/2017.3.1/networktables-2017.3.1.pom"/>
+				<caller organisation="default" name="scalaworks$sources_2.12" conf="test, compile, provided, test-internal, runtime, optional" rev="2017.3.1" rev-constraint-default="2017.3.1" rev-constraint-dynamic="2017.3.1" callerrev="1.0"/>
+				<artifacts>
+					<artifact name="networktables" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="17045" time="0" location="C:\Users\zacha\.ivy2\cache\edu.wpi.first\networktables\srcs\networktables-2017.3.1-sources.jar">
+						<origin-location is-local="false" location="http://team846.github.io/wpilib-maven/edu/wpi/first/networktables/2017.3.1/networktables-2017.3.1-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="edu.wpi.first" name="wpilib">
+			<revision name="2017.3.1" status="release" pubdate="20170608160718" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="0">
+				<metadata-artifact status="no" details="" size="2342" time="0" location="C:\Users\zacha\.ivy2\cache\edu.wpi.first\wpilib\ivy-2017.3.1.xml" searched="false" origin-is-local="false" origin-location="http://team846.github.io/wpilib-maven/edu/wpi/first/wpilib/2017.3.1/wpilib-2017.3.1.pom"/>
+				<caller organisation="default" name="scalaworks$sources_2.12" conf="test, compile, provided, test-internal, runtime, optional" rev="2017.3.1" rev-constraint-default="2017.3.1" rev-constraint-dynamic="2017.3.1" callerrev="1.0"/>
+				<artifacts>
+					<artifact name="wpilib" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="227951" time="0" location="C:\Users\zacha\.ivy2\cache\edu.wpi.first\wpilib\srcs\wpilib-2017.3.1-sources.jar">
+						<origin-location is-local="false" location="http://team846.github.io/wpilib-maven/edu/wpi/first/wpilib/2017.3.1/wpilib-2017.3.1-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+	</dependencies>
+</ivy-report>
