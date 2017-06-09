@@ -17,9 +17,9 @@ class Gear extends Subsystem{
   private val plate = new DigitalInput(G_PLATE_0)
   private val plate1 = new DigitalInput(G_PLATE_1)
 
-  val GearLWS:Array[LiveWindowSendable] = Array(catcher.asInstanceOf[LiveWindowSendable],
-    clamp.asInstanceOf[LiveWindowSendable],
-    ramp.asInstanceOf[LiveWindowSendable])
+  val GearLWS:Array[(LiveWindowSendable, String)] = Array((catcher.asInstanceOf[LiveWindowSendable],"Side Catcher"),
+    (clamp.asInstanceOf[LiveWindowSendable],"Clamp"),
+    (ramp.asInstanceOf[LiveWindowSendable],"Ramp"))
 
   def openRamp: Unit = ramp.set(kReverse)
   def closeRamp: Unit = ramp.set(kForward)

@@ -19,11 +19,11 @@ class Drive extends Subsystem{
 
   private val driveTrain = new RobotDrive(backLeft,frontLeft,backRight,frontRight)
 
-  val DriveLWS:Array[LiveWindowSendable] = Array(frontLeft.asInstanceOf[LiveWindowSendable],
-    frontRight.asInstanceOf[LiveWindowSendable],
-    backLeft.asInstanceOf[LiveWindowSendable],
-    backRight.asInstanceOf[LiveWindowSendable],
-    driveTrain.asInstanceOf[LiveWindowSendable])
+  val DriveLWS:Array[(LiveWindowSendable,String)] = Array((frontLeft.asInstanceOf[LiveWindowSendable],"Front Left"),
+    (frontRight.asInstanceOf[LiveWindowSendable],"Front Right"),
+    (backLeft.asInstanceOf[LiveWindowSendable], "Back Left"),
+    (backRight.asInstanceOf[LiveWindowSendable], "Back Right"),
+    (driveTrain.asInstanceOf[LiveWindowSendable],"Drive Train"))
 
   override def initDefaultCommand(): Unit = setDefaultCommand(new UserDrive)
 

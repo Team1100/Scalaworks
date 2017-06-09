@@ -1,13 +1,16 @@
 import edu.wpi.first.wpilibj.command.Scheduler
 import edu.wpi.first.wpilibj.livewindow.LiveWindow
 import edu.wpi.first.wpilibj.IterativeRobot
-import subsystems.Drive
+import subsystems.{Drive, Gear}
 
 /**
   * Created by zacha on 6/8/2017.
   */
 class Robot extends IterativeRobot{
-  override def robotInit(): Unit = {}
+  override def robotInit(): Unit = {
+    for((actuator,name)<-Drive.instance.DriveLWS) LiveWindow.addActuator("Drive", name, actuator)
+    for((actuator,name)<-Gear.instance.GearLWS) LiveWindow.addActuator("Gear", name, actuator)
+  }
 
   override def disabledInit(): Unit = {}
 
